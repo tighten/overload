@@ -3,11 +3,19 @@
     "description": "Method overloading for PHP",
     "keywords": [
         "tightenco",
-        "overload"
+        "overload",
+        "overloadable",
+        "php"
     ],
     "homepage": "https://github.com/tightenco/overload",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Adam Wathan",
+            "email": "adam.wathan@gmail.com",
+            "homepage": "https://adamwathan.com",
+            "role": "Developer"
+        },
         {
             "name": "Matt Stauffer",
             "email": "matt@tighten.co",
@@ -16,7 +24,8 @@
         }
     ],
     "require": {
-        "php": "^7.1"
+        "php": "^7.1",
+        "tightenco/collect": "^5.6|^6.0"
     },
     "require-dev": {
         "symfony/var-dumper": "^4.3",
