@@ -4,6 +4,7 @@ namespace Tightenco\Overload;
 
 use Closure;
 use Exception;
+use ReflectionFunction;
 use ReflectionMethod;
 
 class OverloadedMethodCandidate
@@ -65,7 +66,7 @@ class OverloadedMethodCandidate
     private function buildUsingClosureReflection($object, $closure)
     {
         $this->callable = $closure->bindTo($object);
-        $reflected = new \ReflectionFunction($closure);
+        $reflected = new ReflectionFunction($closure);
         $this->arguments = $this->mapArguments($reflected);
     }
 

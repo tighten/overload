@@ -2,9 +2,6 @@
 
 namespace Tightenco\Overload;
 
-use Closure;
-use Exception;
-use ReflectionMethod;
 use Tightenco\Collect\Support\Collection;
 
 trait Overloadable
