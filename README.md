@@ -281,7 +281,9 @@ If you discover any security related issues, please email hello@tighten.co inste
 
 ## Credits
 
-The idea of method overloading comes from other languages that have it natively. I (Matt) have heard about it multiple times, including from my friend Adam Wathan, so when I decided to finally build something about it, I got a few hours in and then paused and asked Adam if he'd ever seen anyone build it. Turns out... he had. He sent me a link to this [gist](https://gist.github.com/adamwathan/120f5acb69ba84e3fa911437242796c3). However, Adam didn't want to maintain a package, so, with his blessing, I spun this off to make it more accessible to the rest of the world.
+The idea of method overloading comes from other languages that have it natively. I (Matt) have heard about it multiple times, including from my friend Adam Wathan, so when I decided to finally build something about it, I got a few hours in and then paused and asked Adam if he'd ever seen anyone build it. Turns out... he had.
+
+He sent me a link to this [gist](https://gist.github.com/adamwathan/120f5acb69ba84e3fa911437242796c3). However, Adam didn't want to maintain a package, so, with his blessing, I spun this off to make it more accessible to the rest of the world.
 
 - [Adam Wathan](https://github.com/adamwathan)
 - [Matt Stauffer](https://github.com/mattstauffer)
