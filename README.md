@@ -1,4 +1,4 @@
-![This package is in beta. Use with caution.](https://d1czrtm2mp3lak.cloudfront.net/items/251A0x0t251a372T3o32/in-beta.png?v=7309e42b)
+![Overload logo](https://raw.githubusercontent.com/tightenco/overload/master/overload-banner.png)
 
 # Method overloading for PHP
 
