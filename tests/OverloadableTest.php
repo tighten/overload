@@ -11,7 +11,7 @@ class OverloadableTest extends TestCase
 {
     private $overloadable;
 
-    public function setUp()
+    protected function setUp(): void
     {
         $this->overloadable = new TestOverloadable;
     }
