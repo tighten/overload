@@ -6,6 +6,10 @@
 [![Build Status](https://img.shields.io/travis/tightenco/overload/master.svg?style=flat-square)](https://travis-ci.org/tightenco/overload)
 [![Total Downloads](https://img.shields.io/packagist/dt/tightenco/overload.svg?style=flat-square)](https://packagist.org/packages/tightenco/overload)
 
+
+NOTE: This is a beta release. It's Adam's original code almost exactly, and his docs; if a lot of folks are interested, we can, as a community, find its limits and edges and where it needs to grow.
+
+
 ## Installation
 
 You can install the package via composer:
@@ -260,10 +264,10 @@ For example, it just occurred to me that I haven't really considered how the ref
 Either way, I think it's some pretty fun code and I thought it was pretty cool that we could even come up with an API for it at all.
 
 ## Upcoming plans:
-- Release beta with Adam's exact code
+- ~~Release beta with Adam's exact code~~
 - Discover known shortcomings and document as issues (for starters, optional arguments and the forthcoming union types)
 - Fix ^^
-- Profit?
+- Profit? 🤣 OK, not profit.
 
 ### Testing
 
