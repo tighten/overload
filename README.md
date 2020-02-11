@@ -7,7 +7,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/tightenco/overload.svg?style=flat-square)](https://packagist.org/packages/tightenco/overload)
 
 
-NOTE: This is a beta release. It's Adam's original code almost exactly, and his docs; if a lot of folks are interested, we can, as a community, find its limits and edges and where it needs to grow.
+NOTE: This is a beta release. It's Adam's original code almost exactly, and his docs; if a lot of folks are interested, we can, as a community, find its limits and edges and where it needs to grow. **Please note that, while all credit goes to Adam for writing this, the responsibility for maintaining it is not on him. Tighten will do our best to keep it up, but if this goes anywhere it will be because of community support. This is a beta release and does not carry with it any promise that it doesn't have bugs or holes.**
 
 
 ## Installation
