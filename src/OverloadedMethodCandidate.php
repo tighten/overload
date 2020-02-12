@@ -77,7 +77,7 @@ class OverloadedMethodCandidate
                 return '*';
             }
 
-            return $parameter->getType()->__toString();
+            return $parameter->getType()->getName();
         }, $reflectionFunction->getParameters());
 
         return $this->normalizeTypes($types);
