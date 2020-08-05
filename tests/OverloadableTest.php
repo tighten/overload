@@ -19,12 +19,13 @@ class OverloadableTest extends TestCase
     /** @test */
     function it_overloads()
     {
-        $this->assertEquals('Method A', $this->overloadable->someMethod(true));
+        $this->assertEquals('Method A', $this->overloadable->someMethod(1.2));
         $this->assertEquals('From the Closure', $this->overloadable->someMethod(5, true));
         $this->assertEquals('Method B', $this->overloadable->someMethod(new DateTime, [1, 2, 3], 9));
         $this->assertEquals('Method C', $this->overloadable->someMethod('foo', 'bar'));
         $this->assertEquals('Method D', $this->overloadable->someMethod([], true, true));
         $this->assertEquals('Method E', $this->overloadable->someMethod(true, true, function () {}));
+        $this->assertEquals('Method F', $this->overloadable->someMethod('testString'));
     }
 }
 
@@ -40,13 +41,14 @@ class TestOverloadable
             },
             'methodA',
             'methodB',
-            'methodC' => ['*', '*'],
-            'methodD' => ['array', '*', '*'],
-            'methodE' => ['*', '*', Closure::class],
+            'methodC' => ['string', '*'],
+            'methodD' => ['array', '*', 'bool'],
+            'methodE' => ['bool', '*', Closure::class],
+            'methodF',
         ]);
     }
 
-    private function methodA($arg1)
+    private function methodA(float $arg1)
     {
         return 'Method A';
     }
@@ -69,5 +71,10 @@ class TestOverloadable
     private function methodE($arg1, $arg2, $arg3)
     {
         return 'Method E';
+    }
+
+    private function methodF($arg1)
+    {
+        return 'Method F';
     }
 }

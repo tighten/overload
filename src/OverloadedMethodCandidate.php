@@ -86,7 +86,9 @@ class OverloadedMethodCandidate
     private function normalizeTypes($types)
     {
         return array_map(function ($type) {
-            return $type == 'int' ? 'integer' : $type;
+            $types = ['int' => 'integer', 'bool' => 'boolean', 'float' => 'double'];
+            
+            return array_key_exists($type, $types) ? $types[$type] : $type;
         }, $types);
     }
 }
