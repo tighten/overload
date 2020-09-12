@@ -2,12 +2,12 @@
     "name": "tightenco/overload",
     "description": "Method overloading for PHP",
     "keywords": [
-        "tightenco",
+        "tighten",
         "overload",
         "overloadable",
         "php"
     ],
-    "homepage": "https://github.com/tightenco/overload",
+    "homepage": "https://github.com/tighten/overload",
     "license": "MIT",
     "authors": [
         {

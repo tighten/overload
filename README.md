@@ -1,4 +1,4 @@
-![Overload logo](https://raw.githubusercontent.com/tightenco/overload/master/overload-banner.png)
+![Overload logo](https://raw.githubusercontent.com/tighten/overload/master/overload-banner.png)
 
 # Method overloading for PHP
 
