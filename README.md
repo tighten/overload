@@ -1,9 +1,9 @@
-![Overload logo](https://raw.githubusercontent.com/tighten/overload/master/overload-banner.png)
+![Overload logo](https://raw.githubusercontent.com/tighten/overload/main/overload-banner.png)
 
 # Method overloading for PHP
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tightenco/overload.svg?style=flat-square)](https://packagist.org/packages/tightenco/overload)
-[![Build Status](https://img.shields.io/travis/tightenco/overload/master.svg?style=flat-square)](https://travis-ci.org/tightenco/overload)
+[![Build Status](https://img.shields.io/travis/tightenco/overload/main.svg?style=flat-square)](https://travis-ci.org/tightenco/overload)
 [![Total Downloads](https://img.shields.io/packagist/dt/tightenco/overload.svg?style=flat-square)](https://packagist.org/packages/tightenco/overload)
 
 
