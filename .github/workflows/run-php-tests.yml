@@ -39,3 +39,6 @@ jobs:
     
     - name: Composer Update
       run: composer update ${{ matrix.composer_flag_string }} --no-interaction --prefer-source
+
+    - name: Run PHPUnit
+      run: vendor/bin/phpunit
