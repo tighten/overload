@@ -13,13 +13,13 @@ jobs:
         php: [7.1, 7.2, 7.3, 7.4]
 
         include:
-        - os: None
-          os-version: ''
+        - composer_flag: None
+          composer_flag_string: ''
 
-        - os: Prefer Lowest
-          os-version: --prefer-lowest
+        - composer_flag: Prefer Lowest
+          composer_flag_string: --prefer-lowest
 
-    name: PHP ${{ matrix.php }} -- Composer ${{ matrix.composer_flag }}
+    name: PHP ${{ matrix.php }} -- Composer Flags ${{ matrix.composer_flag }}
     
     runs-on: ubuntu-latest
 
@@ -38,4 +38,4 @@ jobs:
       run: composer self-update
     
     - name: Composer Update
-      run: composer update ${{ matrix.composer_flag }} --no-interaction --prefer-source
+      run: composer update ${{ matrix.composer_flag_string }} --no-interaction --prefer-source
