@@ -2,6 +2,7 @@
 
 # Method overloading for PHP
 
+[![Run tests](https://github.com/tighten/takeout/workflows/Run%20tests/badge.svg?branch=main)](https://github.com/tighten/overload/actions?query=workflow%3A%22Run+PHP+Tests%22)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tightenco/overload.svg?style=flat-square)](https://packagist.org/packages/tightenco/overload)
 [![Build Status](https://img.shields.io/travis/tightenco/overload/main.svg?style=flat-square)](https://travis-ci.org/tightenco/overload)
 [![Total Downloads](https://img.shields.io/packagist/dt/tightenco/overload.svg?style=flat-square)](https://packagist.org/packages/tightenco/overload)
