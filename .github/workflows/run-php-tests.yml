@@ -1,0 +1,44 @@
+name: Run PHP Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        composer_flag: [None, Prefer Lowest]
+        php: [7.1, 7.2, 7.3, 7.4]
+
+        include:
+        - composer_flag: None
+          composer_flag_string: ''
+
+        - composer_flag: Prefer Lowest
+          composer_flag_string: --prefer-lowest
+
+    name: PHP ${{ matrix.php }} -- Composer Flags ${{ matrix.composer_flag }}
+    
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v1
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+          php-version: ${{ matrix.php }}
+          extensions: posix, dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick
+          coverage: none
+    
+    - name: Composer Self Update
+      run: composer self-update
+    
+    - name: Composer Update
+      run: composer update ${{ matrix.composer_flag_string }} --no-interaction --prefer-source
+
+    - name: Run PHPUnit
+      run: vendor/bin/phpunit
